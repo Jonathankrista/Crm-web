@@ -27,6 +27,17 @@ class Contact
 			"#{first_name} #{last_name}"
 	end
 
+	def self.find(contact_id)
+    @@contacts.find { |contact| contact.id == contact_id }
+  end
+
+   def remove
+    @@contacts.delete_if { |contact| contact.id == self.id }
+  end
+ end
+
+
+
 
 #def first_name
 #	@first_name
@@ -35,5 +46,4 @@ class Contact
 #def first_name=(new_first_name)
 #  @first_name = new_first_name
 #end
-end
 
