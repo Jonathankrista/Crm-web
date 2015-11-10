@@ -1,6 +1,38 @@
-<ul>
-		<% Contact.all.each do |contact| %>
-  		<li><%= contact.first_name %> <%= contact.last_name %></li>
-	<% end %>
-	</ul>
-<end>
+
+
+
+
+<body>
+    	<div id="content">
+			<table class="pure-table">
+			    <thead>
+			        <tr>
+			            <th>ID <a href=" "></th>
+			            <th>Name</th>
+			            <th>Email</th>
+			        </tr>
+	        		<% Contact.all.each do |contact| %>
+	        			<tr>
+		        			<td><a href='/contacts/<%= contact.id %>'><%= contact.id %></td>
+									<td> <%= contact.first_name %> <%= contact.last_name %></td>
+									<td> <%= contact.email %> </td>
+								</tr>
+							<% end %>
+			    </thead>
+</body>
+
+
+
+<a class="" href="/">
+<button class="pure-button">
+    <i class="fa eject"></i>
+    Exit
+</button>
+
+<div id="delete">
+<a class="" href="">
+<button class="pure-button">
+    <i class="fa eject"></i>
+    Edit
+</button>
+</div>

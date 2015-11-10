@@ -4,13 +4,37 @@
 
 
 </head>
-	<h1>Create new Contact</h1>
-		<body>
+		<!-- <body>
 			<form action="/contacts" method="post">
 			  <input type="text" name="first_name">
 			  <input type="text" name="last_name">
 			  <input type="text" name="email">
 			  <input type="text" name="note">
 			  <input type="submit" name="submit">		</form>
-		</body>
+		</body> -->
 </html>
+
+
+	<div id="content">
+		<form action ="/contacts" method="post" class="pure-form pure-form-aligned">
+		    <fieldset>
+		    	<div class="pure-control-group">
+		    	<label for="first_name">First Name </label>
+		        <input name="first_name" type="text" placeholder="John" required>
+		        </div>
+
+		        <div class="pure-control-group">
+		        <label for="last_name">Last Name </label>
+		        <input name="last_name" type="text" placeholder="Smith" required>
+		        </div>
+
+		        <div class="pure-control-group">
+		        <label for="email">Email </label>
+		        <input name="email" type="email" placeholder="john@example.ca" required>
+
+		        <div class="pure-controls">
+		        <button type="submit" name="Submit" class="pure-button pure-button-primary">Add Contact</button>
+		        </div>
+		    </fieldset>
+				</div>
+		</div>

@@ -1,20 +1,25 @@
  body {
  	font-family: 'Lato';
   background: #181816;
-	font-size: 40px;
+	font-size: 20px;
 	text-align:center;
 	color: white;
 
 }
 
-#head  h1 {
+
+h1 {
+letter-spacing: 80px;
+font-size: 80px;
 color:green;
 position: relative;
-right:-20px;
 color: rgba(0,0,0,0.6);
 text-shadow:
 2px 8px 6px rgba(0,0,0,0.2),
 0px -5px 35px rgba(255,255,255,0.3);
+outline: 5px solid #CCCCCC;
+outline-offset: 2px;
+
 
 }
 
@@ -36,78 +41,37 @@ text-decoration: none;
 
 }
 
+
 a:hover {
 color:#cf8a05;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slideDown{
-    animation-name: slideDown;
-    -webkit-animation-name: slideDown;
-
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-
-    animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
-
-    visibility: visible !important;
+#delete div {
+  position:absolute;
+  float:right;
+  list-style-type: none;
 }
 
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-    50%{
-        transform: translateY(8%);
-    }
-    65%{
-        transform: translateY(-4%);
-    }
-    80%{
-        transform: translateY(4%);
-    }
-    95%{
-        transform: translateY(-2%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
+#content  {
+  margin:auto;
+  width:100%;
+  position:relative;
+  top:20px;
+  list-style-type: none;
 }
 
-@-webkit-keyframes slideDown {
-    0% {
-        -webkit-transform: translateY(-100%);
-    }
-    50%{
-        -webkit-transform: translateY(8%);
-    }
-    65%{
-        -webkit-transform: translateY(-4%);
-    }
-    80%{
-        -webkit-transform: translateY(4%);
-    }
-    95%{
-        -webkit-transform: translateY(-2%);
-    }
-    100% {
-        -webkit-transform: translateY(0%);
-    }
+.pure-table {
+  margin:auto;
+  position:relative;
+  top:20px;
+  list-style-type: none;
+
 }
+
+#contact-text li{
+list-style-type: none;
+{
+
+
+
+

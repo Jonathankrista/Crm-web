@@ -1,11 +1,27 @@
-<h1>Edit a Contact</h1>
 
-<form action="/contacts/<%= @contact.id %>" method="post">
-  <input type="hidden" name="_method" value="put">
-  <input type="text" name="first_name" value="<%= @contact.first_name %>">
-  <input type="text" name="last_name" value="<%= @contact.last_name %>">
-  <input type="text" name="email" value="<%= @contact.email %>">
-  <input type="text" name="note" value="<%= @contact.note %>">
-  <input type="submit" name="Submit">
-</form>
+<div id="content">
+		<form action ="/contacts/<%= @contact.id %>" method="post" class="pure-form pure-form-aligned">
+		    <fieldset>
+		    	<input type="hidden" name="_method" value="put">
+
+		    	<div class="pure-control-group">
+		    	<label for="first_name">First Name </label>
+		        <input name="first_name" type="text" value="<%= @contact.first_name %>" required>
+		        </div>
+		        <div class="pure-control-group">
+		        <label for="last_name">Last Name </label>
+		        <input name="last_name" type="text" value="<%= @contact.last_name %>" required>
+		        </div>
+		        <div class="pure-control-group">
+		        <label for="email">Email </label>
+		        <input name="email" type="email" value="<%= @contact.email %>" required>
+				</div>
+				<div class="pure-controls">
+		        <button type="submit" name="Submit" class="pure-button pure-button-primary">Modify Contact</button>
+		        </div>
+		    </fieldset>
+		</form>
+	</div>
+
+
 
